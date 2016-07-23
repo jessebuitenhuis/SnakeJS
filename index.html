@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>SnakeJS</title>
+	</head>
+	
+	<body>
+		<h1>SnakeJS</h1>
+
+		<script type="text/javascript" src="./node_modules/systemjs/dist/system.js"></script>
+		<script>
+			SystemJS.config({
+				baseURL: 'built',
+				defaultJSExtensions: 'js'
+			});
+
+			SystemJS.import('index.js');
+		</script>
+	</body>
+</html>
